@@ -1,7 +1,8 @@
 /* 
-    MAIN SCSS FILE
-    Learned: Partials are imported into one main file.
+    MAIN SCSS ENTRY FILE
+    Learned: Imports all partials into one file
 */
+
 @import "variables";
 @import "mixins";
 @import "layout";

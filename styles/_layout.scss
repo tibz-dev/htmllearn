@@ -1,23 +1,43 @@
 /* 
     LAYOUT STYLES
-    Learned: Nesting mirrors HTML structure.
+    Learned: Nesting mirrors HTML structure
 */
+
+body {
+    font-family: Arial, sans-serif;
+    color: $text-color;
+    margin: 0;
+    padding: $spacing;
+    background-color: $background-light;
+}
+
 .site-header {
-    @include box-style;
-    background-color: #f5f5f5;
+    margin-bottom: $spacing;
 
     h1 {
-        color: $primary-color;
         margin: 0;
+        color: $primary-color;
     }
 }
 
-nav {
+.main-nav {
     display: flex;
     gap: 15px;
+    margin-bottom: $spacing;
 
     a {
-        color: $primary-color;
         text-decoration: none;
+        color: $primary-color;
+        font-weight: bold;
     }
+}
+
+.card {
+    @include card-style;
+    margin-bottom: $spacing;
+}
+
+.site-footer {
+    margin-top: $spacing;
+    text-align: center;
 }

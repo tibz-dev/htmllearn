@@ -1,8 +1,11 @@
 /* 
-    MIXIN
-    Learned: Mixins allow reusable blocks of CSS.
+    MIXINS
+    Learned: Reusable style logic
 */
-@mixin box-style {
+
+@mixin card-style {
     padding: $spacing;
-    border: 2px solid $border-color;
+    border: 1px solid $border-color;
+    border-radius: 6px;
+    background-color: white;
 }
