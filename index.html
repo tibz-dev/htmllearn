@@ -12,45 +12,72 @@
         Linking compiled CSS (browser cannot read SCSS)
     -->
     <link rel="stylesheet" href="css/main.css">
+    <!-- 
+    Tailwind CSS CDN
+    Learned: Utility-first CSS framework for rapid UI development
+    -->
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body>
 
-    <!-- Semantic header -->
-    <header class="site-header">
-        <h1>Tebatso Seshayi</h1>
-        <p>Frontend Developer (Learning HTML, CSS & SCSS)</p>
+
+    <header class="site-header text-center mb-8">
+    <!-- 
+        text-center → text alignment
+        mb-8        → spacing using Tailwind scale
+    -->
+    <h1 class="text-3xl md:text-4xl font-bold">
+        Tebatso Seshayi
+    </h1>
+
+    <p class="text-gray-600 mt-2">
+        Frontend Developer · HTML · CSS · SCSS · Tailwind
+    </p>
     </header>
 
-    <!-- Semantic navigation -->
-    <nav class="main-nav">
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Contact</a>
+
+    <nav class="flex flex-col sm:flex-row justify-center gap-6 mb-10">
+    <!-- 
+        flex-col        → vertical on mobile
+        sm:flex-row     → horizontal on small screens+
+        justify-center  → alignment
+    -->
+    <a href="#" class="font-semibold text-blue-600 hover:underline">Home</a>
+    <a href="#" class="font-semibold text-blue-600 hover:underline">About</a>
+    <a href="#" class="font-semibold text-blue-600 hover:underline">Contact</a>
     </nav>
 
     <!-- Main content -->
-    <main>
-        <section class="card">
-            <h2>About This Project</h2>
-            <p>
-                This static page demonstrates my understanding of
-                HTML5 semantic structure, CSS fundamentals,
-                and SCSS architecture including variables,
-                mixins, and nesting.
-            </p>
-        </section>
+   <main class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+    <!-- 
+        max-w-5xl → limits content width on large screens
+        mx-auto   → centers content horizontally
+    -->
 
-        <section class="card">
-            <h2>Technologies Used</h2>
-            <ul>
-                <li>HTML5 (Semantic Markup)</li>
-                <li>CSS3 (Box Model, Selectors)</li>
-                <li>SCSS (Variables, Mixins, Partials)</li>
-            </ul>
-        </section>
+    <section class="card">
+        <h2 class="text-xl font-semibold mb-2">
+            About This Project
+        </h2>
+        <p>
+            This version demonstrates Flexbox for navigation,
+            CSS Grid for layout, and Tailwind utilities for
+            responsive design.
+        </p>
+    </section>
+
+    <section class="card">
+        <h2 class="text-xl font-semibold mb-2">
+            What I Practiced
+        </h2>
+        <ul class="list-disc pl-5 space-y-1">
+            <!-- space-y → vertical spacing between list items -->
+            <li>Flexbox alignment</li>
+            <li>Grid-based layouts</li>
+            <li>Tailwind responsive utilities</li>
+        </ul>
+    </section>
     </main>
-
     <!-- Semantic footer -->
     <footer class="site-footer">
         <p>© 2026 Tebatso Seshayi</p>
