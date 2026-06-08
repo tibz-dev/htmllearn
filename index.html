@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<!-- 
+    HTML5 DOCUMENT DECLARATION
+    Learned: <!DOCTYPE html> tells the browser to use HTML5 standards.
+-->
+<html lang="en">
+<!-- 
+    ROOT HTML ELEMENT
+    Learned: <html> wraps the entire page content.
+    lang="en" improves accessibility and SEO.
+-->
+<head>
+    <!-- 
+        CHARACTER ENCODING
+        Learned: UTF-8 supports special characters and is best practice.
+    -->
+    <meta charset="UTF-8">
+
+    <!-- 
+        PAGE TITLE
+        Learned: <title> appears on browser tab and search engine results.
+    -->
+    <title>Tebatso Portfolio</title>
+</head>
+
+<body>
+    <!-- 
+        BODY SECTION
+        Learned: All visible website content must be inside <body>.
+    -->
+
+    <!-- 
+        SEMANTIC HEADER
+        Learned: <header> is a semantic element used for introductory content.
+        Replaces generic <div> for better structure and accessibility.
+    -->
+    <header>
+        <!-- 
+            MAIN HEADING
+            Learned: <h1> represents the main heading of the page.
+            Best practice: use only one <h1> per page.
+        -->
+        <h1>Tebatso Seshayi</h1>
+
+        <!-- 
+            PARAGRAPH TAG
+            Learned: <p> is used for blocks of text content.
+        -->
+        <p>Aspiring Frontend Developer</p>
+    </header>
+
+    <!-- 
+        SEMANTIC NAVIGATION
+        Learned: <nav> contains navigation links.
+        Screen readers can identify this as navigation automatically.
+    -->
+    <nav>
+        <!-- 
+            ANCHOR TAG
+            Learned: <a> creates hyperlinks.
+            href attribute defines the link destination.
+        -->
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <!-- 
+        MAIN CONTENT AREA
+        Learned: <main> holds the primary content of the page.
+        Only one <main> element should exist per page.
+    -->
+    <main>
+        <!-- 
+            SEMANTIC SECTION
+            Learned: <section> groups related content together.
+        -->
+        <section>
+            <!-- 
+                SECOND-LEVEL HEADING
+                Learned: <h2> is a subheading under <h1>.
+                Heading order should not be skipped.
+            -->
+            <h2>About Me</h2>
+
+            <p>
+                I am learning frontend development step by step,
+                focusing on HTML5 structure, semantic elements,
+                and clean markup.
+            </p>
+        </section>
+    </main>
+
+    <!-- 
+        SEMANTIC FOOTER
+        Learned: <footer> contains footer information such as copyright.
+    -->
+    <footer>
+        <p>© 2026 Tebatso</p>
+    </footer>
+
+    <!-- 
+        FORM PLACEHOLDER (CONCEPT DEMO)
+        Learned: Forms are used to collect user input.
+        This section demonstrates understanding even if not fully styled yet.
+    -->
+    <form>
+        <!-- 
+            LABEL + INPUT
+            Learned: <label> improves accessibility by describing inputs.
+            input type="text" is used for plain text input.
+        -->
+        <label for="name">Name:</label>
+        <input type="text" id="name">
+
+        <!-- 
+            BUTTON
+            Learned: <button type="submit"> submits the form.
+        -->
+        <button type="submit">Submit</button>
+    </form>
+
+</body>
+</html>
