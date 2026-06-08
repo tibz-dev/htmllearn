@@ -1,0 +1,13 @@
+{
+  /*
+    Learned: tsconfig controls how TypeScript behaves.
+    strict mode catches bugs early.
+  */
+  "compilerOptions": {
+    "target": "ES2020",
+    "module": "ESNext",
+    "strict": true,
+    "outDir": "dist",
+    "rootDir": "src"
+  }
+}
