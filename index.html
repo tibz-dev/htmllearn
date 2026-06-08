@@ -49,32 +49,35 @@
     </nav>
 
     <!-- Main content -->
-    <main class="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <!-- 
-            grid               → enables CSS Grid
-            grid-cols-1        → 1 column on mobile
-            md:grid-cols-2     → 2 columns on medium screens
-            gap-6              → spacing between grid items
-        -->
+   <main class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+    <!-- 
+        max-w-5xl → limits content width on large screens
+        mx-auto   → centers content horizontally
+    -->
 
-        <section class="card">
-            <h2>About This Project</h2>
-            <p>
-                This version introduces Flexbox, CSS Grid,
-                and Tailwind utilities for responsive layout.
-            </p>
-        </section>
+    <section class="card">
+        <h2 class="text-xl font-semibold mb-2">
+            About This Project
+        </h2>
+        <p>
+            This version demonstrates Flexbox for navigation,
+            CSS Grid for layout, and Tailwind utilities for
+            responsive design.
+        </p>
+    </section>
 
-        <section class="card">
-            <h2>Technologies Used</h2>
-            <ul class="list-disc pl-5">
-                <li>Flexbox (Navigation)</li>
-                <li>CSS Grid (Layout)</li>
-                <li>Tailwind CSS (Utilities)</li>
-            </ul>
-        </section>
+    <section class="card">
+        <h2 class="text-xl font-semibold mb-2">
+            What I Practiced
+        </h2>
+        <ul class="list-disc pl-5 space-y-1">
+            <!-- space-y → vertical spacing between list items -->
+            <li>Flexbox alignment</li>
+            <li>Grid-based layouts</li>
+            <li>Tailwind responsive utilities</li>
+        </ul>
+    </section>
     </main>
-
     <!-- Semantic footer -->
     <footer class="site-footer">
         <p>© 2026 Tebatso Seshayi</p>
