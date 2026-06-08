@@ -40,23 +40,28 @@
     </nav>
 
     <!-- Main content -->
-    <main>
+    <main class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <!-- 
+            grid               → enables CSS Grid
+            grid-cols-1        → 1 column on mobile
+            md:grid-cols-2     → 2 columns on medium screens
+            gap-6              → spacing between grid items
+        -->
+
         <section class="card">
             <h2>About This Project</h2>
             <p>
-                This static page demonstrates my understanding of
-                HTML5 semantic structure, CSS fundamentals,
-                and SCSS architecture including variables,
-                mixins, and nesting.
+                This version introduces Flexbox, CSS Grid,
+                and Tailwind utilities for responsive layout.
             </p>
         </section>
 
         <section class="card">
             <h2>Technologies Used</h2>
-            <ul>
-                <li>HTML5 (Semantic Markup)</li>
-                <li>CSS3 (Box Model, Selectors)</li>
-                <li>SCSS (Variables, Mixins, Partials)</li>
+            <ul class="list-disc pl-5">
+                <li>Flexbox (Navigation)</li>
+                <li>CSS Grid (Layout)</li>
+                <li>Tailwind CSS (Utilities)</li>
             </ul>
         </section>
     </main>
