@@ -1,0 +1,8 @@
+/* 
+    MIXIN
+    Learned: Mixins allow reusable blocks of CSS.
+*/
+@mixin box-style {
+    padding: $spacing;
+    border: 2px solid $border-color;
+}

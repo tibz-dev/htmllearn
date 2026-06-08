@@ -1,0 +1,23 @@
+/* 
+    LAYOUT STYLES
+    Learned: Nesting mirrors HTML structure.
+*/
+.site-header {
+    @include box-style;
+    background-color: #f5f5f5;
+
+    h1 {
+        color: $primary-color;
+        margin: 0;
+    }
+}
+
+nav {
+    display: flex;
+    gap: 15px;
+
+    a {
+        color: $primary-color;
+        text-decoration: none;
+    }
+}
