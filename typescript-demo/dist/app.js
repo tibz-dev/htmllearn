@@ -1,4 +1,4 @@
-/* 
+/*
   app.ts
   Demonstrates:
   - Type inference
@@ -6,51 +6,43 @@
   - Enum usage
   - Safe runtime checks
 */
-
-import { User, UserRole, ApiStatus } from "./models";
+import { UserRole } from "./models";
 import { formatUserName, wrapInArray, isUser } from "./utils";
-
 /**
  * Type inference:
  * TypeScript infers the type automatically.
  */
-let status: ApiStatus = "loading";
-
+let status = "loading";
 /**
  * Explicitly typed object using interface.
  */
-const currentUser: User = {
-  id: 1,
-  name: "Tebatso",
-  email: "tebatso@restec.co.za",
-  role: UserRole.Admin,
-  isActive: true
+const currentUser = {
+    id: 1,
+    name: "Tebatso",
+    email: "tebatso@restec.co.za",
+    role: UserRole.Admin,
+    isActive: true
 };
-
 /**
  * Function using typed parameters and return type.
  */
-function printUser(user: User): void {
-  console.log(formatUserName(user));
+function printUser(user) {
+    console.log(formatUserName(user));
 }
-
 printUser(currentUser);
-
 /**
  * Generic function usage
  */
 const wrappedUser = wrapInArray(currentUser);
 console.log(wrappedUser);
-
 /**
  * Runtime validation using type guard
  */
-const unknownData: unknown = currentUser;
-
+const unknownData = currentUser;
 if (isUser(unknownData)) {
-  console.log("Valid user detected:", unknownData.email);
-} else {
-  console.log("Invalid user object");
+    console.log("Valid user detected:", unknownData.email);
 }
-
+else {
+    console.log("Invalid user object");
+}
 status = "success";

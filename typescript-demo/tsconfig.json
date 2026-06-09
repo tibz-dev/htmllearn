@@ -1,13 +1,21 @@
 {
-  /*
-    Learned: tsconfig controls how TypeScript behaves.
-    strict mode catches bugs early.
-  */
   "compilerOptions": {
+    /* JavaScript version to compile to */
     "target": "ES2020",
+
+    /* Module system */
     "module": "ESNext",
-    "strict": true,
+
+    /* Explicitly define source and output structure */
+    "rootDir": "src",
     "outDir": "dist",
-    "rootDir": "src"
-  }
+
+    /* Strict type checking */
+    "strict": true,
+    "strictNullChecks": true,
+
+    /* Improves compatibility with imports */
+    "esModuleInterop": true
+  },
+  "include": ["src"]
 }

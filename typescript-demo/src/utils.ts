@@ -1,22 +1,37 @@
-/*
-  Learned: Union types allow multiple possible types.
+/* 
+  utils.ts
+  Demonstrates:
+  - Typed functions
+  - Generics
+  - Type guards
 */
-export type ApiResponse<T> =
-  | { success: true; data: T }
-  | { success: false; error: string };
 
-/*
-  Learned: Generics make functions reusable and type-safe.
-*/
-export function successResponse<T>(data: T): ApiResponse<T> {
-  return { success: true, data };
+import { User } from "./models";
+
+/**
+ * Generic function
+ * Works with ANY type while keeping type safety.
+ */
+export function wrapInArray<T>(value: T): T[] {
+  return [value];
 }
 
-/*
-  Learned: Type guards safely narrow union types.
-*/
-export function isSuccess<T>(
-  response: ApiResponse<T>
-): response is { success: true; data: T } {
-  return response.success;
+/**
+ * Utility function with explicit return type.
+ */
+export function formatUserName(user: User): string {
+  return `${user.name} (${user.email})`;
+}
+
+/**
+ * Type guard
+ * Helps TypeScript narrow types at runtime.
+ */
+export function isUser(value: unknown): value is User {
+  return (
+    typeof value === "object" &&
+    value !== null &&
+    "id" in value &&
+    "email" in value
+  );
 }
