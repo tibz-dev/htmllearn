@@ -7,8 +7,10 @@
   - Safe runtime checks
 */
 
-import { User, UserRole, ApiStatus } from "./models";
-import { formatUserName, wrapInArray, isUser } from "./utils";
+// Node ESM requires explicit file extensions.
+// TypeScript keeps ".js" here and resolves it correctly at compile time.
+import { User, UserRole, ApiStatus } from "./models.js";
+import { formatUserName, wrapInArray, isUser } from "./utils.js";
 
 /**
  * Type inference:

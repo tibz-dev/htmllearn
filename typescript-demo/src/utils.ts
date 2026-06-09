@@ -6,7 +6,8 @@
   - Type guards
 */
 
-import { User } from "./models";
+// Explicit ".js" extension is required when using NodeNext module resolution
+import { User } from "./models.js";
 
 /**
  * Generic function

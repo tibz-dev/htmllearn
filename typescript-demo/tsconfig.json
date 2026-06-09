@@ -1,21 +1,14 @@
 {
   "compilerOptions": {
-    /* JavaScript version to compile to */
-    "target": "ES2020",
+    "target": "ES2022",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
 
-    /* Module system */
-    "module": "ESNext",
+    "rootDir": "./src",
+    "outDir": "./dist",
 
-    /* Explicitly define source and output structure */
-    "rootDir": "src",
-    "outDir": "dist",
-
-    /* Strict type checking */
     "strict": true,
-    "strictNullChecks": true,
-
-    /* Improves compatibility with imports */
-    "esModuleInterop": true
-  },
-  "include": ["src"]
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true
+  }
 }

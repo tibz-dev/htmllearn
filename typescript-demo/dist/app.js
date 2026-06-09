@@ -6,8 +6,10 @@
   - Enum usage
   - Safe runtime checks
 */
-import { UserRole } from "./models";
-import { formatUserName, wrapInArray, isUser } from "./utils";
+// Node ESM requires explicit file extensions.
+// TypeScript keeps ".js" here and resolves it correctly at compile time.
+import { UserRole } from "./models.js";
+import { formatUserName, wrapInArray, isUser } from "./utils.js";
 /**
  * Type inference:
  * TypeScript infers the type automatically.
